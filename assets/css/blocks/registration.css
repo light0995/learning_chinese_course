@@ -1,0 +1,115 @@
+.modal {
+  width: 380px;
+  min-height: 270px;
+  background-color: #206e9a;
+  padding: 20px 0;
+  box-shadow: inset 15px -20px 40px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+  transition: opacity 0.5s ease-in-out;
+  visibility: hidden;
+  opacity: 0;
+}
+.modal__show {
+  visibility: visible;
+  opacity: 1;
+}
+.modal__choose {
+  color: #fff;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.modal__form {
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 90%;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(5, 50px);
+  row-gap: 15px;
+}
+.modal__form input {
+  border-radius: 5px;
+  border: none;
+  padding: 0px 10px;
+}
+.modal__form input::placeholder {
+  color: grey;
+  font-size: 18px;
+}
+.modal__form-login {
+  grid-template-rows: repeat(2, 50px);
+}
+.modal__btn {
+  background-color: #5fb029;
+  color: #fff;
+  width: 180px;
+  font-size: 16px;
+  margin: 0 auto;
+}
+.modal__btn-registration {
+  width: 220px;
+}
+.modal__btn:active {
+  font-size: 14px;
+}
+.modal__close {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  cursor: pointer;
+  z-index: 2;
+}
+.modal__close::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  right: 0;
+  width: 25px;
+  height: 2px;
+  background-color: #fff;
+  transform: rotate(45deg);
+}
+.modal__close::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  right: 0;
+  width: 25px;
+  height: 2px;
+  background-color: #fff;
+  transform: rotate(-45deg);
+}
+.modal__registration {
+  display: none;
+  transition: all 0.5s;
+}
+.modal__registration-active {
+  display: block;
+}
+.modal__choose {
+  font-size: 26px;
+}
+.modal__login-title {
+  cursor: pointer;
+}
+.modal__register-title {
+  cursor: pointer;
+}
+.modal__login-title-active, .modal__register-title-active {
+  text-decoration: underline;
+  text-underline-offset: 7px;
+}
+.modal__login-wrapper {
+  display: none;
+}
+.modal__login-wrapper-active {
+  display: block;
+}

@@ -1,0 +1,153 @@
+@charset "UTF-8";
+/* Общий фон страницы */
+/* Секция с курсом */
+.course-details {
+  font-family: "Arial", sans-serif;
+  background: linear-gradient(to right, rgb(141, 112, 255) 90%, rgb(141, 112, 255));
+  color: #fff;
+  padding: 40px 0;
+  padding-top: 120px;
+  position: relative;
+}
+
+.course-details-back {
+  width: 10%;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.08);
+  position: fixed;
+  left: 0;
+  top: 0;
+  border: none;
+  cursor: pointer;
+}
+
+.course-details-back:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.course-details-arrow {
+  width: 80px;
+  height: 80px;
+}
+
+.course-details-back:active {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Контейнер для содержимого */
+.course-details .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+}
+
+/* Оформление заголовка курса */
+.course-details-title {
+  font-size: 40px;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.course-details-title-icon {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: -110px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Описание курса */
+.course-details-description {
+  font-size: 24px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+/* Оформление списка целей */
+.course-details-purpose,
+.course-details-audience {
+  margin-bottom: 60px;
+}
+
+/* Подзаголовок */
+.course-details-subtitle {
+  font-size: 29px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Список элементов */
+.course-details-list {
+  margin-top: 30px;
+  padding-left: 0;
+  list-style-type: none;
+  font-size: 22px;
+  line-height: 1.6;
+}
+
+/* Пункты списка */
+.course-details-list-item {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 15px;
+}
+.course-details-list-item::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: -30px;
+  top: 0px;
+  background-image: url("../icons/baidu-svgrepo-com.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.course-details-list-item-goal::before {
+  background-image: url("../icons/goal.svg");
+}
+
+.course-details-list-item-content::before {
+  background-image: url("../icons/content.svg");
+}
+
+/* Мобильная адаптация */
+@media (max-width: 1280px) {
+  .course-details {
+    padding-top: 80px;
+  }
+  .course-details .container {
+    max-width: 720px;
+  }
+  .course-details-title-icon {
+    width: 70px;
+    height: 70px;
+  }
+  .course-details-title {
+    font-size: 35px;
+    margin-bottom: 20px;
+  }
+  .course-details-subtitle {
+    font-size: 28px;
+  }
+  .course-details-list {
+    margin-top: 10px;
+  }
+  .course-details-list-item {
+    margin-bottom: 10px;
+    padding-left: 20px;
+  }
+  .course-details-list-item::before {
+    margin-top: 2px;
+    left: -20px;
+  }
+  .course-details-purpose,
+  .course-details-audience {
+    margin-bottom: 40px;
+  }
+}

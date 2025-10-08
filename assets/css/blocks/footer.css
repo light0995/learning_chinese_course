@@ -1,0 +1,24 @@
+.footer {
+  background: linear-gradient(to right, rgb(141, 112, 255) 90%, rgb(141, 112, 255));
+}
+
+.footer__social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__social-item {
+  width: 20px;
+  height: 20px;
+}
+
+.footer__wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer__copyright {
+  font-size: 20px;
+}

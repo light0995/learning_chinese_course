@@ -1,0 +1,156 @@
+.hamburger {
+  padding: 5px 20px;
+  width: 200px;
+  height: 100vh;
+  position: fixed;
+  background-color: #fff;
+  z-index: 2;
+  left: -200%;
+  visibility: hidden;
+  transition: all 0.5s;
+}
+
+.hamburger__active {
+  left: 0;
+  visibility: visible;
+}
+
+.close__btn {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 15px;
+  right: 5px;
+  cursor: pointer;
+}
+.close__btn img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.close__btn:active {
+  width: 35px;
+  height: 35px;
+}
+
+.hamburger__header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hamburger__logo {
+  width: 70px;
+  padding-left: 0px;
+}
+
+.hamburger__login {
+  width: 100px;
+  height: 35px;
+  font-size: 15px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.hamburger__menu-items {
+  list-style-type: none;
+  padding-left: 0;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  margin-top: 20px;
+}
+.hamburger__menu-items a {
+  color: #000;
+  text-decoration: none;
+}
+
+.hamburger__menu-item {
+  position: relative;
+}
+
+.hamburger__menu-item::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  border: 1px solid #000;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: none;
+}
+
+.hamburger__menu-item a:hover::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  border: 1px solid #000;
+  background-color: #eaea00;
+  border: none;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.hamburger__menu-item a:active {
+  font-size: 15px;
+}
+
+.hamburger__social {
+  position: absolute;
+  width: 100%;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.hamburger__social-links {
+  max-width: 100px;
+  display: flex;
+  justify-self: center;
+  margin-top: 20px;
+}
+
+.hamburger__social-title {
+  font-size: 18px;
+  text-align: center;
+}
+
+.hamburger__social-link {
+  width: 22px;
+  height: 22px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.hamburger__social-link img {
+  width: 100%;
+  height: 100%;
+}
+
+.hamburger__toggle {
+  position: fixed;
+  top: 10px;
+  left: 5px;
+  z-index: 5;
+  visibility: hidden;
+  transition: all 0.5s;
+}
+
+.hamburger__toggle-line {
+  width: 20px;
+  height: 2px;
+  background-color: #000;
+  z-index: 10;
+  margin-top: 3px;
+}
+
+.hamburger__toggle-hide {
+  left: -200%;
+  visibility: hidden;
+}
