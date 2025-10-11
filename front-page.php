@@ -35,7 +35,7 @@
                     </div>
                 </div>
     
-               <div class="promo__img-wrapper"><img src="./img/Vicky.png" alt="promo__img" class="promo__img"></div>
+               <div class="promo__img-wrapper"><img src="<?php echo get_template_directory_uri(); ?> ./assets/img/Vicky.png" alt="promo__img" class="promo__img"></div>
     
             </div>
 

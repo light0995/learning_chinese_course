@@ -72,8 +72,8 @@
         
      <div class="sidepanel">
         <div class="social sidepanel__social">
-            <div class="social__item social__instagram"><a href="https://www.instagram.com/shidak.akhmat/"  class="social__toggle"><img src="./icons/social/instagram.svg" alt="inst"></a></div>
-            <div class="social__item social__telegram"><a href="https://t.me/shidak_akhmat"   class="social__toggle"><img src="./icons/social/telegram.svg" alt="telegram"></a></div>
+            <div class="social__item social__instagram"><a href="https://www.instagram.com/shidak.akhmat/"  class="social__toggle"><img src="<?php echo get_template_directory_uri(); ?> /assets/icons/social/instagram.svg" alt="inst"></a></div>
+            <div class="social__item social__telegram"><a href="https://t.me/shidak_akhmat"   class="social__toggle"><img src="<?php echo get_template_directory_uri(); ?> /assets/icons/social/telegram.svg" alt="telegram"></a></div>
         </div>
         <div class="sidepanel__line"></div>
         <div class="sidepanel__text">Социальные сети</div>
