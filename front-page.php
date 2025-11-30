@@ -35,7 +35,7 @@
                     </div>
                 </div>
     
-               <div class="promo__img-wrapper"><img src="<?php echo get_template_directory_uri(); ?> ./assets/img/Vicky.png" alt="promo__img" class="promo__img"></div>
+               <div class="promo__img-wrapper"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/Vicky.png" alt="promo__img" class="promo__img"></div>
     
             </div>
 
@@ -48,7 +48,7 @@
 
    
 
-    <section class="product__cards" id="product__cards">
+    <!-- <section class="product__cards" id="product__cards">
 
     <div class="container">
             <h2 class="product__cards-title">
@@ -81,6 +81,6 @@
     </div>
 
 
-        </section>
+        </section> -->
 <?php get_footer(); ?>
 
