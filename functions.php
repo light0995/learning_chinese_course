@@ -7,6 +7,8 @@ function theme_name_scripts() {
   wp_enqueue_style( 'style-name', get_stylesheet_uri() );
   wp_enqueue_style( 'style-name-my.css', get_template_directory_uri() . "/assets/css/style.css");
   wp_enqueue_style('my-media.css', get_template_directory_uri()."/assets/css/media.css");
+  wp_enqueue_style('contacts', get_template_directory_uri()."/assets/css/contacts.css");
+
 
   wp_enqueue_script( 'script-1', get_template_directory_uri() . '/assets/js/script.js', '1.0.0', true );
   // wp_enqueue_script( 'script-2', get_template_directory_uri() . '/assets/js/script2.js', array(), '1.0.0', true );

@@ -201,16 +201,15 @@
     width: 60px;
   }
   .header__menu-item {
-    margin-right: 25px;
+    margin-right: 20px;
   }
   .header__menu-item a {
-    font-size: 15px;
+    font-size: 14px;
   }
   .header__login {
-    width: 100px;
-    height: 35px;
-    font-size: 15px;
+    display: none;
   }
+
   .sidepanel__social {
     width: 17px;
     row-gap: 10px;
@@ -302,6 +301,11 @@
   .title {
     font-size: 30px;
     line-height: 30px;
+  }
+  .promo__content {
+    background: none;
+    border: none;
+    padding: 0;
   }
   .promo__description-text {
     margin-top: 5px;
